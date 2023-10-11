@@ -1,0 +1,78 @@
+/* styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .card-link {
+    color: #00f;
+    text-decoration: none;
+  }
+
+  .hello-world-card {
+    width: 90%; /* Full width of the viewport */
+    text-align: center;
+    margin: 0 auto; /* Only bottom margin needed */
+    height: auto; /* Make it narrow */
+    top: 0; /* Position it at the top */
+    left: 0; /* Position it at the left */
+    z-index: 1000; /* Make sure it's above other elements */
+  }
+
+  .big-card {
+    width: 76.5%; /* Full width of the viewport */
+    text-align: center;
+    margin: 0 auto; /* Only bottom margin needed */
+    margin-top:20px;
+    margin-bottom: 42px;
+    height: 100px; /* Make it narrow */
+    top: 0; /* Position it at the top */
+    left: 0; /* Position it at the left */
+    z-index: 1000; /* Make sure it's above other elements */
+  }
+
+  #starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+    /* Rest of the styles */
+  }
+
