@@ -6,7 +6,7 @@ let sketch = function(p) {
   
     p.setup = function() {
       p.createCanvas(p.windowWidth, p.windowHeight, p.WEBGL);
-      p.canvas.id = 'starfield-canvas'; // Add an id to the canvas
+      p.canvas.id = 'starfield-canvas'; // Add an id to the canvasa
       speed = 1; // Increase speed
   
       // Create a random set of stars with cyberpunk colors

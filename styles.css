@@ -52,7 +52,7 @@ body {
   .big-card {
     width: 76.5%; /* Full width of the viewport */
     text-align: center;
-    margin: 0 auto; /* Only bottom margin needed */
+    margin: 0 auto; /* Only bottoma margin needed */
     margin-top:20px;
     margin-bottom: 42px;
     height: 100px; /* Make it narrow */

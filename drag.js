@@ -1,4 +1,4 @@
-// Get all the move icons
+// Get all the move iconsa
 var moveIcons = document.querySelectorAll('.move-icon');
 
 // Variables to store the dragged card, the placeholder card and the initial mouse position

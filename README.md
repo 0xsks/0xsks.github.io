@@ -1,5 +1,5 @@
 # loading-room
-Home page in progress
+Home page in progress...
 
 Using:
 -HTML
