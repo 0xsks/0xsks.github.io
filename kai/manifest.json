@@ -1,7 +1,7 @@
 {
-  "name": "KoboldAI Lite",
-  "short_name": "KoboldAI Lite",
-  "description": "Progressive Web App for KoboldAI Lite",
+  "name": "Degen LLM",
+  "short_name": "Degen LLM",
+  "description": "Progressive Web App for Degen LLM Lite",
   "start_url": "./",
   "scope": ".",
   "display": "standalone",

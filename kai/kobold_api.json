@@ -155,28 +155,28 @@
             "properties":{
                "disable_input_formatting":{
                   "default":true,
-                  "description":"When enabled, all input formatting options default to `false` instead of the value in the KoboldAI GUI",
+                  "description":"When enabled, all input formatting options default to `false` instead of the value in the Degen LLM GUI",
                   "type":"boolean"
                },
                "disable_output_formatting":{
                   "default":true,
-                  "description":"When enabled, all output formatting options default to `false` instead of the value in the KoboldAI GUI.",
+                  "description":"When enabled, all output formatting options default to `false` instead of the value in the Degen LLM GUI.",
                   "type":"boolean"
                },
                "frmtadsnsp":{
-                  "description":"Input formatting option. When enabled, adds a leading space to your input if there is no trailing whitespace at the end of the previous action.\n\nIf `disable_input_formatting` is `true`, this defaults to `false` instead of the value in the KoboldAI GUI.",
+                  "description":"Input formatting option. When enabled, adds a leading space to your input if there is no trailing whitespace at the end of the previous action.\n\nIf `disable_input_formatting` is `true`, this defaults to `false` instead of the value in the Degen LLM GUI.",
                   "type":"boolean"
                },
                "frmtrmblln":{
-                  "description":"Output formatting option. When enabled, replaces all occurrences of two or more consecutive newlines in the output with one newline.\n\nIf `disable_output_formatting` is `true`, this defaults to `false` instead of the value in the KoboldAI GUI.",
+                  "description":"Output formatting option. When enabled, replaces all occurrences of two or more consecutive newlines in the output with one newline.\n\nIf `disable_output_formatting` is `true`, this defaults to `false` instead of the value in the Degen LLM GUI.",
                   "type":"boolean"
                },
                "frmtrmspch":{
-                  "description":"Output formatting option. When enabled, removes `#/@%{}+=~|\\^<>` from the output.\n\nIf `disable_output_formatting` is `true`, this defaults to `false` instead of the value in the KoboldAI GUI.",
+                  "description":"Output formatting option. When enabled, removes `#/@%{}+=~|\\^<>` from the output.\n\nIf `disable_output_formatting` is `true`, this defaults to `false` instead of the value in the Degen LLM GUI.",
                   "type":"boolean"
                },
                "frmttriminc":{
-                  "description":"Output formatting option. When enabled, removes some characters from the end of the output such that the output doesn't end in the middle of a sentence. If the output is less than one sentence long, does nothing.\n\nIf `disable_output_formatting` is `true`, this defaults to `false` instead of the value in the KoboldAI GUI.",
+                  "description":"Output formatting option. When enabled, removes some characters from the end of the output such that the output doesn't end in the middle of a sentence. If the output is less than one sentence long, does nothing.\n\nIf `disable_output_formatting` is `true`, this defaults to `false` instead of the value in the Degen LLM GUI.",
                   "type":"boolean"
                },
                "max_context_length":{
@@ -237,7 +237,7 @@
                   "type":"integer"
                },
                "singleline":{
-                  "description":"Output formatting option. When enabled, removes everything after the first line of the output, including the newline.\n\nIf `disable_output_formatting` is `true`, this defaults to `false` instead of the value in the KoboldAI GUI.",
+                  "description":"Output formatting option. When enabled, removes everything after the first line of the output, including the newline.\n\nIf `disable_output_formatting` is `true`, this defaults to `false` instead of the value in the Degen LLM GUI.",
                   "type":"boolean"
                },
                "soft_prompt":{
@@ -287,7 +287,7 @@
                },
                "use_authors_note":{
                   "default":false,
-                  "description":"Whether or not to use the author's note from the KoboldAI GUI when generating text. This has no effect unless `use_story` is also enabled.",
+                  "description":"Whether or not to use the author's note from the Degen LLM GUI when generating text. This has no effect unless `use_story` is also enabled.",
                   "type":"boolean"
                },
                "use_default_badwordsids":{
@@ -297,22 +297,22 @@
                },
                "use_memory":{
                   "default":false,
-                  "description":"Whether or not to use the memory from the KoboldAI GUI when generating text.",
+                  "description":"Whether or not to use the memory from the Degen LLM GUI when generating text.",
                   "type":"boolean"
                },
                "use_story":{
                   "default":false,
-                  "description":"Whether or not to use the story from the KoboldAI GUI when generating text.",
+                  "description":"Whether or not to use the story from the Degen LLM GUI when generating text.",
                   "type":"boolean"
                },
                "use_userscripts":{
                   "default":false,
-                  "description":"Whether or not to use the userscripts from the KoboldAI GUI when generating text.",
+                  "description":"Whether or not to use the userscripts from the Degen LLM GUI when generating text.",
                   "type":"boolean"
                },
                "use_world_info":{
                   "default":false,
-                  "description":"Whether or not to use the world info from the KoboldAI GUI when generating text.",
+                  "description":"Whether or not to use the world info from the Degen LLM GUI when generating text.",
                   "type":"boolean"
                }
             },
@@ -402,8 +402,8 @@
             "properties":{
                "backend":{
                   "enum":[
-                     "KoboldAI API",
-                     "KoboldAI Old Colab Method",
+                     "Degen LLM API",
+                     "Degen LLM Old Colab Method",
                      "Basic Huggingface",
                      "Huggingface",
                      "GooseAI",
@@ -416,7 +416,7 @@
                   "type":"string"
                },
                "model":{
-                  "description":"Hugging Face model ID, the path to a model folder (relative to the \"models\" folder in the KoboldAI root folder) or \"ReadOnly\" for no model",
+                  "description":"Hugging Face model ID, the path to a model folder (relative to the \"models\" folder in the root folder) or \"ReadOnly\" for no model",
                   "pattern":"^(?!\\s*NeoCustom)(?!\\s*GPT2Custom)(?!\\s*TPUMeshTransformerGPTJ)(?!\\s*TPUMeshTransformerGPTNeoX)(?!\\s*GooseAI)(?!\\s*OAI)(?!\\s*InferKit)(?!\\s*Colab)(?!\\s*API).*$",
                   "type":"string"
                }
@@ -1054,7 +1054,7 @@
       }
    },
    "info":{
-      "title":"KoboldAI API",
+      "title":"Degen LLM API",
       "version":"1.2.5"
    },
    "openapi":"3.0.3",
@@ -2574,7 +2574,7 @@
       },
       "/generate":{
          "post":{
-            "description":"Generates text given a submission, sampler settings, soft prompt and number of return sequences.\n\nBy default, the story, userscripts, memory, author's note and world info are disabled.\n\nUnless otherwise specified, optional values default to the values in the KoboldAI GUI.",
+            "description":"Generates text given a submission, sampler settings, soft prompt and number of return sequences.\n\nBy default, the story, userscripts, memory, author's note and world info are disabled.\n\nUnless otherwise specified, optional values default to the values in the GUI.",
             "requestBody":{
                "content":{
                   "application/json":{
@@ -2657,7 +2657,7 @@
                            "cpu.default_cpu_allocator":{
                               "value":{
                                  "detail":{
-                                    "msg":"KoboldAI ran out of memory: DefaultCPUAllocator: not enough memory: you tried to allocate 209715200 bytes.",
+                                    "msg":"Degen LLM ran out of memory: DefaultCPUAllocator: not enough memory: you tried to allocate 209715200 bytes.",
                                     "type":"out_of_memory.cpu.default_cpu_allocator"
                                  }
                               }
@@ -2665,7 +2665,7 @@
                            "gpu.cuda":{
                               "value":{
                                  "detail":{
-                                    "msg":"KoboldAI ran out of memory: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 4.00 GiB total capacity; 2.97 GiB already allocated; 0 bytes free; 2.99 GiB reserved in total by PyTorch)",
+                                    "msg":"Degen LLM ran out of memory: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 4.00 GiB total capacity; 2.97 GiB already allocated; 0 bytes free; 2.99 GiB reserved in total by PyTorch)",
                                     "type":"out_of_memory.gpu.cuda"
                                  }
                               }
@@ -2673,7 +2673,7 @@
                            "gpu.hip":{
                               "value":{
                                  "detail":{
-                                    "msg":"KoboldAI ran out of memory: HIP out of memory. Tried to allocate 20.00 MiB (GPU 0; 4.00 GiB total capacity; 2.97 GiB already allocated; 0 bytes free; 2.99 GiB reserved in total by PyTorch)",
+                                    "msg":"Degen LLM ran out of memory: HIP out of memory. Tried to allocate 20.00 MiB (GPU 0; 4.00 GiB total capacity; 2.97 GiB already allocated; 0 bytes free; 2.99 GiB reserved in total by PyTorch)",
                                     "type":"out_of_memory.gpu.hip"
                                  }
                               }
@@ -2681,7 +2681,7 @@
                            "tpu.hbm":{
                               "value":{
                                  "detail":{
-                                    "msg":"KoboldAI ran out of memory: Compilation failed: Compilation failure: Ran out of memory in memory space hbm. Used 8.83G of 8.00G hbm. Exceeded hbm capacity by 848.88M.",
+                                    "msg":"Degen LLM ran out of memory: Compilation failed: Compilation failure: Ran out of memory in memory space hbm. Used 8.83G of 8.00G hbm. Exceeded hbm capacity by 848.88M.",
                                     "type":"out_of_memory.tpu.hbm"
                                  }
                               }
@@ -2689,7 +2689,7 @@
                            "unknown.unknown":{
                               "value":{
                                  "detail":{
-                                    "msg":"KoboldAI ran out of memory.",
+                                    "msg":"Degen LLM ran out of memory.",
                                     "type":"out_of_memory.unknown.unknown"
                                  }
                               }
@@ -2785,13 +2785,13 @@
       },
       "/model":{
          "get":{
-            "description":"Gets the current model string, which is shown in the title of the KoboldAI GUI in parentheses, e.g. \"KoboldAI Client (KoboldAI/fairseq-dense-13B-Nerys-v2)\".",
+            "description":"Gets the current model string, which is shown in the title of the Degen LLM GUI in parentheses, e.g. \"Degen LLM Client (Degen LLM/fairseq-dense-13B-Nerys-v2)\".",
             "responses":{
                "200":{
                   "content":{
                      "application/json":{
                         "example":{
-                           "result":"KoboldAI/fairseq-dense-13B-Nerys-v2"
+                           "result":"Degen LLM/fairseq-dense-13B-Nerys-v2"
                         },
                         "schema":{
                            "$ref":"#/components/schemas/BasicResult"
@@ -2807,7 +2807,7 @@
             ]
          },
          "put":{
-            "description":"Loads a model given its Hugging Face model ID, the path to a model folder (relative to the \"models\" folder in the KoboldAI root folder) or \"ReadOnly\" for no model.\nOptionally, a backend parameter can be passed in to dictate which backend loads the model.",
+            "description":"Loads a model given its Hugging Face model ID, the path to a model folder (relative to the \"models\" folder in the Degen LLM root folder) or \"ReadOnly\" for no model.\nOptionally, a backend parameter can be passed in to dictate which backend loads the model.",
             "requestBody":{
                "content":{
                   "application/json":{
@@ -2903,7 +2903,7 @@
             ]
          },
          "get":{
-            "description":"Returns the entire story currently shown in the KoboldAI GUI.",
+            "description":"Returns the entire story currently shown in the Degen LLM GUI.",
             "responses":{
                "200":{
                   "content":{
@@ -2924,7 +2924,7 @@
       },
       "/story/end":{
          "get":{
-            "description":"Returns the last action of the story in the KoboldAI GUI.",
+            "description":"Returns the last action of the story in the Degen LLM GUI.",
             "responses":{
                "200":{
                   "content":{
@@ -2959,7 +2959,7 @@
             ]
          },
          "post":{
-            "description":"Inserts a single action at the end of the story in the KoboldAI GUI without generating text.",
+            "description":"Inserts a single action at the end of the story in the Degen LLM GUI without generating text.",
             "requestBody":{
                "content":{
                   "application/json":{
@@ -3019,7 +3019,7 @@
       },
       "/story/end/delete":{
          "post":{
-            "description":"Removes the last action of the story in the KoboldAI GUI.",
+            "description":"Removes the last action of the story in the Degen LLM GUI.",
             "requestBody":{
                "content":{
                   "application/json":{
@@ -3092,7 +3092,7 @@
       },
       "/story/end/num":{
          "get":{
-            "description":"Returns the `num` of the last action of the story in the KoboldAI GUI.",
+            "description":"Returns the `num` of the last action of the story in the Degen LLM GUI.",
             "responses":{
                "200":{
                   "content":{
@@ -3129,7 +3129,7 @@
       },
       "/story/end/text":{
          "get":{
-            "description":"Returns the text of the last action of the story in the KoboldAI GUI.",
+            "description":"Returns the text of the last action of the story in the Degen LLM GUI.",
             "responses":{
                "200":{
                   "content":{
@@ -3164,7 +3164,7 @@
             ]
          },
          "put":{
-            "description":"Sets the text of the last action of the story in the KoboldAI GUI to the desired value.",
+            "description":"Sets the text of the last action of the story in the Degen LLM GUI to the desired value.",
             "requestBody":{
                "content":{
                   "application/json":{
@@ -3284,7 +3284,7 @@
       },
       "/story/nums":{
          "get":{
-            "description":"Returns the `num`s of the story chunks currently shown in the KoboldAI GUI.",
+            "description":"Returns the `num`s of the story chunks currently shown in the Degen LLM GUI.",
             "responses":{
                "200":{
                   "content":{
@@ -3380,7 +3380,7 @@
       },
       "/story/{num}":{
          "delete":{
-            "description":"Removes a story chunk from the story in the KoboldAI GUI given its `num`. Cannot be used to delete the first action (the prompt).",
+            "description":"Removes a story chunk from the story in the Degen LLM GUI given its `num`. Cannot be used to delete the first action (the prompt).",
             "parameters":[
                {
                   "description":"`num` of the desired story chunk. Must be larger than or equal to 1.",
@@ -3608,7 +3608,7 @@
       },
       "/world_info":{
          "get":{
-            "description":"Returns all world info entries currently shown in the KoboldAI GUI.\n\nThe `folders` are sorted in the same order as they are in the GUI and the `entries` within the folders and within the parent `result` object are all sorted in the same order as they are in their respective parts of the GUI.",
+            "description":"Returns all world info entries currently shown in the Degen LLM GUI.\n\nThe `folders` are sorted in the same order as they are in the GUI and the `entries` within the folders and within the parent `result` object are all sorted in the same order as they are in their respective parts of the GUI.",
             "responses":{
                "200":{
                   "content":{
@@ -3629,7 +3629,7 @@
       },
       "/world_info/folders":{
          "get":{
-            "description":"Returns details about all world info folders currently shown in the KoboldAI GUI.\n\nThe `folders` are sorted in the same order as they are in the GUI.",
+            "description":"Returns details about all world info folders currently shown in the Degen LLM GUI.\n\nThe `folders` are sorted in the same order as they are in the GUI.",
             "responses":{
                "200":{
                   "content":{
@@ -3688,7 +3688,7 @@
       },
       "/world_info/folders/none":{
          "get":{
-            "description":"Returns all world info entries that are not in a world info folder.\n\nThe `entries` are sorted in the same order as they are in the KoboldAI GUI.",
+            "description":"Returns all world info entries that are not in a world info folder.\n\nThe `entries` are sorted in the same order as they are in the Degen LLM GUI.",
             "responses":{
                "200":{
                   "content":{
@@ -3747,7 +3747,7 @@
       },
       "/world_info/folders/none/uids":{
          "get":{
-            "description":"Returns the `uid`s of all world info entries that are not in a world info folder.\n\nThe `entries` are sorted in the same order as they are in the KoboldAI GUI.",
+            "description":"Returns the `uid`s of all world info entries that are not in a world info folder.\n\nThe `entries` are sorted in the same order as they are in the Degen LLM GUI.",
             "responses":{
                "200":{
                   "content":{
@@ -3801,7 +3801,7 @@
       },
       "/world_info/folders/uids":{
          "get":{
-            "description":"Returns the `uid`s of all world info folders currently shown in the KoboldAI GUI.\n\nThe `folders` are sorted in the same order as they are in the GUI.",
+            "description":"Returns the `uid`s of all world info folders currently shown in the Degen LLM GUI.\n\nThe `folders` are sorted in the same order as they are in the GUI.",
             "responses":{
                "200":{
                   "content":{
@@ -3913,7 +3913,7 @@
             ]
          },
          "get":{
-            "description":"Returns all world info entries that are in the world info folder with the given `uid`.\n\nThe `entries` are sorted in the same order as they are in the KoboldAI GUI.",
+            "description":"Returns all world info entries that are in the world info folder with the given `uid`.\n\nThe `entries` are sorted in the same order as they are in the Degen LLM GUI.",
             "parameters":[
                {
                   "description":"`uid` of the desired world info folder.",
@@ -4149,7 +4149,7 @@
       },
       "/world_info/folders/{uid}/uids":{
          "get":{
-            "description":"Returns the `uid`s of all world info entries that are in the world info folder with the given `uid`.\n\nThe `entries` are sorted in the same order as they are in the KoboldAI GUI.",
+            "description":"Returns the `uid`s of all world info entries that are in the world info folder with the given `uid`.\n\nThe `entries` are sorted in the same order as they are in the Degen LLM GUI.",
             "parameters":[
                {
                   "description":"`uid` of the desired world info folder.",
@@ -5081,11 +5081,11 @@
          "name":"model"
       },
       {
-         "description":"Endpoints for managing the story in the KoboldAI GUI",
+         "description":"Endpoints for managing the story in the Degen LLM GUI",
          "name":"story"
       },
       {
-         "description":"Endpoints for managing the world info in the KoboldAI GUI",
+         "description":"Endpoints for managing the world info in the Degen LLM GUI",
          "name":"world_info"
       },
       {

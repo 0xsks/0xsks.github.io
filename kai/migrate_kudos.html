@@ -135,7 +135,7 @@
 			document.getElementById("outputtxt").innerText = "Kudos migrated successfully!\nNew Kudos: "+data.new_kudos+"\n\nYou may now close this page.";
 		}else{
 			document.getElementById("outputtxt").style.color = "red";
-			document.getElementById("outputtxt").innerText = "Kudos Migration Failed!\n" + JSON.stringify(data)+"\n\nPlease contact us on KoboldAI Discord with any issues!\nInclude both your old and new horde usernames, but do not reveal your API keys.";
+			document.getElementById("outputtxt").innerText = "Kudos Migration Failed!\n" + JSON.stringify(data)+"\n\n\nInclude both your old and new horde usernames, but do not reveal your API keys.";
 		}
 		
 	})
@@ -150,12 +150,12 @@
 </script>
 
 <h3>Kudos Migration Tool</h3> 
-<p>This will transfer <b>ALL</b> your Kudos from the old KoboldAI horde to the new merged StableHorde.</p>
+<p>This will transfer <b>ALL</b> your Kudos from the old KoboldDegen LLM to the new merged StableHorde.</p>
 <hr>
 <p id="outputtxt" style="color:black;">Ready to begin.</p>
 <hr>
 <div id="p1" style="display: block;">
-<p>Step 1 - Please enter your KoboldAI API Key (For original KoboldAI.net horde)</p>
+<p>Step 1 - Please enter your Degen LLM API Key (For original Degen LLM.net horde)</p>
 <p><input type="text" placeholder="Original API Key" value="" id="oldapikey">
 <button type="button" id="b1" onclick="step2()">Go Step 2</button></p>
 </div>
